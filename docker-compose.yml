@@ -1,0 +1,9 @@
+version: '2'
+services:
+  bootstrap-a-simple-application:
+    container_name: bootstrap-a-simple-application
+    build:
+      dockerfile: Dockerfile
+    image: bootstrap-a-simple-application:latest
+    ports:
+      - "8081:8081"
