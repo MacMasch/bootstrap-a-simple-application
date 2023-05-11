@@ -1,10 +1,10 @@
-package ch.martinschuler.bootstrapasimpleapplication;
+package ch.martinschuler.bootstrapsimpleapplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BootstrapASimpleApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {
