@@ -4,12 +4,20 @@ plugins {
     id("io.spring.dependency-management") version "1.1.0"
 }
 
-group = "ch.martinschuler"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
+
+buildscript {
+    repositories {
+        mavenCentral() // or gradlePluginPortal()
+    }
+    dependencies {
+        classpath("com.dipien:semantic-version-gradle-plugin:2.0.0")
+    }
+}
+apply(plugin = "com.dipien.semantic-version")
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
 }
 
 repositories {
