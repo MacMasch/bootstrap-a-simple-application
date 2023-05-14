@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 services:
   bootstrap-a-simple-application:
     container_name: bootstrap-a-simple-application
