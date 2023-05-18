@@ -1,9 +1,12 @@
 plugins {
     java
-    id("spring-conventions")
 }
 
 version = "0.0.1"
+
+tasks.named<Jar>("jar") {
+    enabled = false
+}
 
 repositories {
     mavenCentral()
@@ -18,15 +21,6 @@ buildscript {
     }
 }
 apply(plugin = "com.dipien.semantic-version")
-
-dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-security")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-
-    runtimeOnly("com.h2database:h2")
-}
 
 tasks.withType<Test> {
     useJUnitPlatform()
