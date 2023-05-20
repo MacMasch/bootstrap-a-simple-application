@@ -6,4 +6,5 @@
 
 # Notes
 
-* Setup `build-gradle-project.yml` -> make `gradlew` executable with `git update-index --chmod=+x gradlew`
+* Setup `build-gradle-project.yml`
+    * make `gradlew` executable with `git update-index --chmod=+x gradlew`
