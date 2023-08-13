@@ -4,7 +4,7 @@ services:
     container_name: bootstrap-a-simple-application
     build:
       dockerfile: Dockerfile
-    image: bootstrap-a-simple-application:latest
+    image: bootstrap-a-simple-application-backend:latest
     ports:
       - "8081:8081"
     restart: always
