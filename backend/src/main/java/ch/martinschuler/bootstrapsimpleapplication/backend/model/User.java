@@ -6,9 +6,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
-@Entity
 @Data
 @NoArgsConstructor
+@Entity
 public class User {
 
     @Builder
