@@ -8,7 +8,7 @@ import lombok.*;
 
 @Data
 @NoArgsConstructor
-@Entity
+@Entity(name = "tbl_user")
 public class User {
 
     @Builder
