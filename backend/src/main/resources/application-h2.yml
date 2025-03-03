@@ -6,7 +6,7 @@ spring:
     name: Building a Web Application with Spring Boot and Angular
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:~/h2/bootstrap-a-simple-application/h2;NON_KEYWORDS=USER
+    url: jdbc:h2:~/h2/bootstrap-a-simple-application/h2;INIT=CREATE SCHEMA IF NOT EXISTS bootstrap_a_simple_application
     username: sa
     password:
   h2:
@@ -16,5 +16,8 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update # https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database
+    properties:
+      hibernate:
+        default_schema: bootstrap_a_simple_application
   liquibase:
     enabled: false
