@@ -18,4 +18,5 @@ dependencies {
     implementation("org.liquibase:liquibase-core")
 
     runtimeOnly("com.h2database:h2")
+    runtimeOnly("org.postgresql:postgresql")
 }

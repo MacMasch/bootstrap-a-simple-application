@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: Building a Web Application with Spring Boot and Angular
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  liquibase:
+    enabled: false
