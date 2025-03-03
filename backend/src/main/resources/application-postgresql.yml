@@ -10,7 +10,11 @@ spring:
     username: postgres
     password:
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: create
+    properties:
+      hibernate:
+        default_schema: bootstrap-a-simple-application
   liquibase:
     enabled: false
