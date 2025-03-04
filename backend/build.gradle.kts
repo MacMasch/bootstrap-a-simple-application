@@ -1,10 +1,5 @@
 plugins {
-    java
     id("spring-conventions")
-}
-
-repositories {
-    mavenCentral()
 }
 
 tasks.named<Jar>("jar") {
